@@ -123,7 +123,7 @@ Un coup est une liste de deux éléments, le premier élément étant le joueur 
 ```
 ```
 
-> Si vous trouvez des exploits, bug, optimisations possibles ou autre merci de fork.
+> Si vous trouvez des exploits, bug, optimisations possibles, ou autre, merci de fork.
 > Vous avez bien entendu le droit de tester vos IAs en avance ou même de vous entrainer entre vous.
 
 ## Liste des participants
