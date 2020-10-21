@@ -24,7 +24,7 @@ La partie se finie lorsque la grille est remplie ou alors lorsque aucun joueur n
 
 ### C'est pour quand?
 
-De maintenant à la rentrée ou un peu après, en fonction de ce que vous préferez.
+De maintenant à une semaine après la rentrée ou encore un peu après, en fonction de ce que vous préferez.
 
 ### Comment s'inscrire?
 
