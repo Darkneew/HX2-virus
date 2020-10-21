@@ -42,7 +42,7 @@ Quand j'aurais reçu toute les IAs, je les ferais toute s'affronter, et celle qu
 
 ## L'IA
 
-Votre but est de créer un fichier `votre_nom.py` qui a une fonction appelée "ia" qui prendra deux arguments, le dictionnaire "game" et la chaine de charactère représentant votre côté, et qui retournera une liste de deux entiers qui representeront les deux coordonnées (ligne / colonne), ou False si l'IA ne peut/veut pas jouer.
+Votre but est de créer un fichier `votre_nom.py` qui a une fonction appelée `ia` qui prendra deux arguments, le dictionnaire `game` et la chaine de charactère représentant votre côté, et qui retournera une liste de deux entiers qui representeront les deux coordonnées (ligne / colonne), ou False si l'IA ne peut/veut pas jouer.
 
 Example :
 ```py
