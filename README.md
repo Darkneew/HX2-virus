@@ -64,10 +64,10 @@ def ia (game, side):
 
 ##### Conditions :
 
-Votre IA ne doit pas modifier l'argument qui lui est transmis
-Si le coup que l'IA veut jouer est illegal, elle passera son tour
-Votre IA ne doit pas prendre plus de 10 sec a jouer
-Vous avez le droit de recopier les fonctions déjà écrites dans le code source
+Votre IA ne doit pas modifier l'argument qui lui est transmis.
+Si le coup que l'IA veut jouer est illegal, elle passera son tour.
+Votre IA ne doit pas prendre plus de 10 sec a jouer.
+Vous avez le droit de recopier les fonctions déjà écrites dans le code source.
 
 ### Le dictionnaire game :
 ```py
