@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>CONCOURS HX2 VIRUS</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <img src="assets/bg.jpg" id="bg"/>
+    <div id="vignette_choice"></div>
+    <div id="vignette_game"></div>
+    <div id="choice">
+        <h1>Quel match voulez vous revoir?</h1>
+        <div id="list" style="cursor: pointer;"></div>
+    </div>
+    <div id="game">
+        <table id="grid"></table>
+        <div id="text">
+            <h1 id="vs_title"></h1>
+            <br/>
+            <div class="ref"><div class="white_pawn ref_pawn"></div><div class="ref_text" id="p1"></div></div>
+            <div class="ref"><div class="black_pawn ref_pawn"></div><div class="ref_text" id="p2"></div></div>
+            <br/>
+            <p style="font-size: 30px;">C'est au tour de <span id="player_turn"></span><span id="loading"></span></p>
+            <p style="font-size: 28px;" id="move"></p>
+
+        </div>
+    </div>
+    <div id="end"> gngngng</div>
+    <script src='saves.js'></script>
+    <script src="script.js"></script>
+</body>
+</html>

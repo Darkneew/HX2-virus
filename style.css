@@ -1,0 +1,170 @@
+:root { 
+    text-align: center;
+    font-size: 25px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+#vignette_choice {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    box-shadow: inset 0px 0px 150px black;
+    z-index: 2;
+}
+
+#vignette_game {
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: radial-gradient(transparent, rgba(0,0,0,0.8));
+    z-index: 3;
+}
+
+#bg {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+#list {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#choice {
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+    z-index: 5;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+}
+
+#game {
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+    background-image: url("assets/bg2.jpg");
+    background-repeat: repeat;
+    box-shadow: 10px 10px 60px;
+    z-index: 4;
+    position: absolute;
+    width: 180vh;
+    height: 90vh;
+    top: -100%;
+    left: -100%;
+    border-radius: 2.5%/5%;
+}
+
+table {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 90vh;
+    height: 90vh;
+}
+
+td {
+    border: 1px solid black;
+}
+
+#text {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 90vh;
+    height: 90vh;
+}
+
+.black_pawn {
+    margin: 0 auto;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background-color: black;
+    background: -webkit-radial-gradient(30% 25%, circle closest-corner, #777,#222);
+	background: -moz-radial-gradient(30% 25%, circle closest-corner, #777,#222);
+	background: -o-radial-gradient(30% 25%, circle closest-corner, #777,#222);
+	background: -ms-radial-gradient(30% 25%, circle closest-corner, #777,#222);
+	background: radial-gradient(30% 25%, circle closest-corner, #777,#222);
+	-webkit-box-shadow: inset 0 -2px 15px rgba(255,255,255,0.3), inset -2px -1px 40px rgba(10,10,10,0.4), 0 0 2px rgba(0,0,0,0.5);
+	box-shadow: inset 0 -2px 15px rgba(255,255,255,0.3), inset -2px -1px 40px rgba(10,10,10,0.4), 0 0 2px rgba(0,0,0,0.5);
+	-webkit-transform: scale(0.9);
+	-moz-transform: scale(0.9);
+	-o-transform: scale(0.9);
+	-ms-transform: scale(0.9);
+	transform: scale(0.9);
+}
+
+.white_pawn {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    margin: 0 auto;
+    background: -webkit-radial-gradient(30% 25%, circle closest-corner, #eee,#bbb);
+	background: -moz-radial-gradient(30% 25%, circle closest-corner, #eee,#bbb);
+	background: -o-radial-gradient(30% 25%, circle closest-corner, #eee,#bbb);
+	background: -ms-radial-gradient(30% 25%, circle closest-corner, #eee,#bbb);
+	background: radial-gradient(30% 25%, circle closest-corner, #eee,#bbb);
+	-webkit-box-shadow: inset 0 -2px 15px rgba(255,255,255,0.3), inset -2px -1px 40px rgba(10,10,100,0.4), 0 0 2px rgba(0,0,0,0.5);
+	box-shadow: inset 0 -2px 15px rgba(255,255,255,0.3), inset -2px -1px 40px rgba(10,10,100,0.4), 0 0 2px rgba(0,0,0,0.5);
+	-webkit-transform: scale(0.9);
+	-moz-transform: scale(0.9);
+	-o-transform: scale(0.9);
+	-ms-transform: scale(0.9);
+	transform: scale(0.9);
+}
+
+.ref {
+    position: relative;
+    left: 20%;
+    height: 45px;
+    width: 60%;
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+
+.ref_pawn {
+    position: absolute;
+    opacity: 1 !important;
+    top: 0px;
+    left: 0px;
+    height: 45px;
+    width: 45px;
+}
+
+.ref_text {
+    position: absolute;
+    top: 0px;
+    left: 65px;
+}
+
+#end {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    display: none;
+    position: absolute;
+    bottom: 50vh;
+    left: 2.5vw;
+    width: 95vw;
+    font-size: 8vw;
+    box-shadow: 1vw 1vw 2vw;
+    background-color: wheat;
+    z-index: 6;
+}
