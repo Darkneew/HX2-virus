@@ -1,7 +1,8 @@
 import sys
 import random
-player_2_ia = __import__(sys.argv[2]).ia
-player_1_ia = __import__(sys.argv[1]).ia
+import importlib
+player_2_ia = importlib.import_module("IAs." + sys.argv[2]).ia
+player_1_ia = importlib.import_module("IAs." + sys.argv[1]).ia
 
 def print_game (game):
     print("")
@@ -39,12 +40,8 @@ def output (game):
     '''
     Take the game object and output the current game in a save file
     '''
-    if game["player_1"]["start"]:
-        filename = "./saves/" + game["player_1"]["name"] + "VS" + game["player_2"]["name"] + ".js"
-    else :
-        filename = "./saves/" + game["player_2"]["name"] + "VS" + game["player_1"]["name"] + ".js"
-    f = open(filename, "w")
-    f.write("const game = " + str(game["history"]) + ";")
+    f = open("saves.js", "a")
+    f.write('games.{}_{} = {};'.format(game["player_1"]["name"], game["player_2"]["name"], str(game["history"])))
     f.close()
     return True
 
@@ -72,7 +69,7 @@ def turn(game, player):
     '''
     move = game[player]["ia"](game, player)
     if not valid_move(game, player, move) or move == False:
-        game["history"].append([player, False])
+        game["history"].append([player, "False"])
         return True
     game["grid"][move[0]][move[1]] = game["references"][player]
     game[player]["score"] += 1
@@ -128,10 +125,13 @@ def play_game ():
             end = True
     if Partie["player_1"]["score"] > Partie["player_2"]["score"]:
         print(Partie["player_1"]["name"] + " win")
+        Partie["history"].append(["player_1"])
     elif Partie["player_1"]["score"] < Partie["player_2"]["score"]:
         print(Partie["player_2"]["name"] + " win")
+        Partie["history"].append(["player_2"])
     else :
         print("egality")
+        Partie["history"].append(["equality"])
     output(Partie)
 
 play_game()
